@@ -1,5 +1,5 @@
 # drosophila-census
-Exploring ML models to perform drosophila census estimates.
+Exploring ML models to perform drosophila census estimates. The objective is to (1) crop the image to a region of interest and (2) estimate the number of flies in that region.
 
 ### Method #1: Manual Thresholding
 
@@ -7,9 +7,11 @@ This program provides a simple GUI to estimate drosphila melanogaster fruit flie
 
 ### Method #2: K-Means + Viola-Jones
 
-This model counts drosphila melanogaster fruit flies in a region of interest from mobile phone images. It uses traditional computer vision techniques, such as k-means clustering for segmentation and the Viola-Jones algorithm for object detection.
+This model uses traditional computer vision techniques, such as k-means clustering for segmentation and the Viola-Jones algorithm for object detection.
 
+### Method #3: YOLOv5 Object Detection
 
+This model uses deep learning to detect flies from already cropped images.
 
 This project is being developed for a study that tracks Drosophila adaptation to seasonal insecticide pressure being conducted in the Petrov Lab at Stanford Univeristy.
 
